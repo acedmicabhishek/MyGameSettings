@@ -1,0 +1,117 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'SpaceMono';
+    src: url('SpaceMono.ttf') format('truetype');
+}
+
+body {
+    font-family: 'SpaceMono', sans-serif;
+    background-color: #d6e8f7; /* A cooler tone for PC games */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 10px;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.description h1 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.description p {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link-button {
+    text-decoration: none;
+    color: #222;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 14px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    border: 2px solid rgba(34, 34, 34, 0.4);
+}
+
+.link-button:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back {
+    margin-top: 25px;
+}
+
+.back a {
+    text-decoration: none;
+    color: #222;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    border: 2px solid rgba(34, 34, 34, 0.4);
+}
+
+.back a:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media query for phone portrait view */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        max-width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .description h1 {
+        font-size: 24px;
+    }
+
+    .link-button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .back a {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

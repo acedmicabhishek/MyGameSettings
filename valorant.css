@@ -1,0 +1,81 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'SpaceMono';
+    src: url('SpaceMono.ttf') format('truetype');
+}
+
+body {
+    font-family: 'SpaceMono', sans-serif;
+    background-color: #e8c074;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 10px;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.123);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.603);
+}
+
+.description h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.description p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.settings {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.settings h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.settings ul {
+    list-style: none;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.settings ul li {
+    margin-bottom: 8px;
+}
+
+.link-button {
+    text-decoration: none;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+    border: 1px solid rgba(51, 51, 51, 0.3);
+}
+
+.link-button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000;
+}
